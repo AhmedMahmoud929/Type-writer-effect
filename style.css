@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4e0ff;
+    color: #0075FF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 200px auto;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input {
+    width: 68%;
+    padding: 10px;
+    margin: 20px 0px;
+    outline: none;
+    border: none;
+    color: #0075FF;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+form input::placeholder {
+    color: #0075FF;
+    opacity: 0.4;
+    font-weight: 700;
+}
+
+form button {
+    width: 30%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #0075FF;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+span {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 50vw;
+    margin: 10px auto;
+    /* // for long words */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* // MediaQ */
+
+@media (max-width:650px) {
+    .container {
+        width: 70%;
+        margin: 200px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:350px) {
+    .container {
+        width: 90%;
+        margin: 200px auto;
+        text-align: center;
+    }
+}
